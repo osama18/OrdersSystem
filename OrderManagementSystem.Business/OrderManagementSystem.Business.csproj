@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\OrderStateMachine\States\DeliveryDetailsUpdates.cs" />
+    <Compile Remove="Models\OrderStateMachine\States\PaymentDetailsCreated.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OrderManagementSystem.ORM\OrderManagementSystem.ORM.csproj" />
+  </ItemGroup>
+
+</Project>
